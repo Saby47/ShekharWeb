@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        main {
+            padding: 1em;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Attractive Web Page</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>About Us</h2>
+        <p>This is an example of an attractive web page with basic functionality.</p>
+        <button class="button" id="clickButton">Click Me</button>
+        <p id="message"></p>
+    </main>
+    <script>
+        const clickButton = document.getElementById("clickButton");
+        const message = document.getElementById("message");
+
+        clickButton.addEventListener("click", () => {
+            message.textContent = "Button clicked!";
+        });
+    </script>
+</body>
+</html>
